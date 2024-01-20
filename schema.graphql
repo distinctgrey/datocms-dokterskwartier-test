@@ -2540,6 +2540,7 @@ type ResponsiveImage {
 type SeoField {
   description: String
   image: FileField
+  noIndex: BooleanType
   title: String
   twitterCard: String
 }
@@ -2568,6 +2569,7 @@ type Site {
     locale: SiteLocale
   ): GlobalSeoField
   locales: [SiteLocale!]!
+  noIndex: BooleanType
 }
 
 enum SiteLocale {
